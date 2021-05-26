@@ -1,0 +1,173 @@
+/* Czcionka */
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+
+/* BODY */
+body{
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Odibee Sans', cursive; 
+    background: #142586;
+}
+
+
+/* INPUT */
+.input{
+    display: flex; 
+    justify-content: center; 
+    display: block;
+    text-align: center;
+    height: 240px;
+}
+
+.input > h1{
+    margin: 0 0 20px 0;
+    font-size: 100px;
+}
+
+::-webkit-input-placeholder{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.searchbar > input{
+    width: 500px;
+    height: 60px;
+    border: 0px;
+    outline: none;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 30px;
+    vertical-align: middle;
+    transition: all ease-in-out 0.3s;
+}
+
+.btn{
+    border: 3px solid white;
+    height: 80px;
+    width: 70px;
+    vertical-align: middle;
+    padding: 0;
+    border-radius: 20px;
+    margin-left: 20px;
+    font-size: 40px;
+    color: #000000;
+    transition: all ease-in-out 0.3s;
+} 
+
+
+/* TASKS */
+.tasks{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.task{
+    transform: translateX(-0px);
+    width: 600px;
+    height: 30px;
+    border: 2px solid black;
+    background: #9198e5;
+    outline: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 25px;
+    vertical-align: middle;
+    transition: all ease-in-out 0.3s;
+}
+
+
+/* PAGE */
+.page{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    visibility: visible;
+    font-size: 60px;
+    background-color: white;
+    text-align: center;
+    z-index: 1;
+}
+.page2{
+    visibility: visible;
+}
+
+.buttons{
+    width: 700px;
+    height: 400px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.btn_page{
+    width: 200px;
+    height: 70px;
+    margin: 0 60px 0 60px;
+    transform: translateY(-70px);
+    border: none;
+}
+
+.page > h1{
+    transform: translateY(50px);
+    font-size: 70px;
+    color: #142586;
+}
+
+#btn_page1{
+    background-color: rgb(38, 196, 38);
+}
+#btn_page2{
+    background-color: rgb(212, 30, 30);
+}
+
+ /* .one-line > button{
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    border: 0;
+    font-size: 40px;
+    vertical-align: middle;
+} */
+/* #btn1{
+    color: #1ea51e;
+}
+#btn2{
+    color: #941818;
+} */ 
+
+
+/* Animacje */
+.btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.task:hover{
+    background-color: #b4b8e9;
+}
+.searchbar > input:hover{
+    background-color: #d7dbfd
+}
+.btn_page:hover{
+    opacity: 70%;
+}
