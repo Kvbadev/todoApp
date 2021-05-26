@@ -47,7 +47,7 @@ body{
 }
 
 .btn{
-    border: 3px solid white;
+    border:none;
     height: 80px;
     width: 90px;
     vertical-align: middle;
@@ -55,7 +55,7 @@ body{
     border-radius: 20px;
     margin-left: 20px;
     font-size: 40px;
-    color: #000000;
+    color: #142586;
     transition: all ease-in-out 0.3s;
 } 
 
@@ -124,9 +124,9 @@ body{
 
 .btn_page{
     font-family: 'Bebas Neue', cursive;
-    width: 200px;
+    width: 300px;
     height: 70px;
-    margin: 0 60px 0 60px;
+    margin: 0 30px 0 30px;
     transform: translateY(-70px);
     border: none;
     font-size: 60px;
@@ -147,26 +147,11 @@ body{
     background-color: rgb(212, 30, 30);
 }
 
- /* .one-line > button{
-    height: 70px;
-    width: 70px;
-    border-radius: 20px;
-    border: 0;
-    font-size: 40px;
-    vertical-align: middle;
-} */
-/* #btn1{
-    color: #1ea51e;
-}
-#btn2{
-    color: #941818;
-} */ 
-
-
 /* Animacje */
+
 .btn:hover{
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #d7dbfd;
+    cursor: pointer;
 }
 
 .task:hover{
