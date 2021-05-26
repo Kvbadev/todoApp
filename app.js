@@ -6,6 +6,7 @@ const taskList = document.querySelector('.tasks');
 const page = document.querySelector('.page');
 const btnPage1 = document.getElementById('btn_page1');
 const btnPage2 = document.getElementById('btn_page2');
+const rest = document.querySelector('.rest');
 //
 
 //VARIABLES
@@ -24,21 +25,21 @@ addButton.addEventListener('click', function(){
         newTask.id = getId();
         input.value = "";
         number++;
-        if(number > 0){
+        if(newTask != null){
             newTask.addEventListener('click', function(){
-                page.classList.toggle('page2');
+                hover();
                 elementId = getAnId(this);   
             })
         }
     }
 })
 btnPage1.addEventListener('click', function(){
-    page.classList.toggle('page2');
+    hover();
 })
 
 btnPage2.addEventListener('click', function(){
     document.getElementById(elementId).remove();
-    page.classList.toggle('page2');
+    hover();
 })
 
 
@@ -48,4 +49,10 @@ function getId(){
 }
 function getAnId(btn){
     return(btn.id);
+}
+function hover(){
+    input.classList.toggle('input2');
+    addButton.classList.toggle('btn2');
+    page.classList.toggle('page2');
+    taskList.classList.toggle('task2');
 }
