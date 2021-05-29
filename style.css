@@ -46,7 +46,7 @@ body{
 }
 
 .input2{
-    visibility: hidden;
+    display: none;
 }
 
 .btn{
@@ -63,7 +63,7 @@ body{
 } 
 
 .btn2{
-    visibility: hidden;
+    display: none;
 }
 
 
@@ -93,7 +93,7 @@ body{
 }
 
 .task2{
-    visibility: hidden;
+    display: none;
 }
 
 /* PAGE */
